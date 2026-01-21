@@ -1,0 +1,81 @@
+# -------------------------
+# OS FILES
+# -------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# -------------------------
+# IDE / EDITORS
+# -------------------------
+# VS Code
+.vscode/
+.history/
+
+# JetBrains (IntelliJ, PyCharm, WebStorm)
+.idea/
+*.iml
+
+# -------------------------
+# NODE PROJECTS
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+# -------------------------
+# PYTHON PROJECTS
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+*.egg-info/
+
+# -------------------------
+# BUILD / OUTPUT
+# -------------------------
+dist/
+build/
+tmp/
+temp/
+.cache/
+
+# -------------------------
+# ENVIRONMENT / SECRETS
+# -------------------------
+.env
+.env.local
+.env.*.local
+*.secret
+*.key
+
+# -------------------------
+# LOGS
+# -------------------------
+logs/
+*.log
+
+# -------------------------
+# MISC
+# -------------------------
+coverage/
+*.bak
+*.swp
+*.swo

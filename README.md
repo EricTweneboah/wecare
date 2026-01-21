@@ -1,0 +1,8 @@
+﻿# Wecare project
+
+We Care For You Foundation is a multi-page nonprofit website for a registered charity in Ghana, highlighting its mission, community programs, and ways to get involved. It presents causes such as education support, livelihoods and skills training, and clean water and health outreach, with clear paths for volunteering, donating, and contacting the team.
+
+## Pages
+- `index.html` for the main story, causes, and contact details
+- `projects.html` for past projects
+- `donate.html` for donation and support options

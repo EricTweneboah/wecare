@@ -1,6 +1,7 @@
 (() => {
-    const form = document.querySelector(".donate-form");
+    const form = document.querySelector("#donate-form") || document.querySelector(".donate-form");
     if (!form) {
+        console.warn("Donate form not found. Stripe handler not attached.");
         return;
     }
 

@@ -129,12 +129,13 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-12 mx-auto">
-                        <form class="custom-form donate-form" action="#" method="get" role="form">
+                        <form class="custom-form donate-form" id="donate-form" action="#" method="get" role="form">
                             <h3 class="mb-4">Support our work in Ghana</h3>
 
                             <p class="mb-4">Your gift fuels education, health outreach, and emergency relief for
                                 communities in need.</p>
 
+                            <div id="donate-status" class="alert d-none" role="alert"></div>
                             <div class="row">
                                 <div class="col-lg-12 col-12">
                                     <h5 class="mb-3">Donation Frequency</h5>
@@ -142,8 +143,8 @@
 
                                 <div class="col-lg-6 col-6 form-check-group form-check-group-donation-frequency">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="DonationFrequency"
-                                            id="DonationFrequencyOne" checked>
+                                        <input class="form-check-input" type="radio" name="donation-frequency"
+                                            id="DonationFrequencyOne" value="one_time" checked>
 
                                         <label class="form-check-label" for="DonationFrequencyOne">
                                             One Time
@@ -153,8 +154,8 @@
 
                                 <div class="col-lg-6 col-6 form-check-group form-check-group-donation-frequency">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="DonationFrequency"
-                                            id="DonationFrequencyMonthly">
+                                        <input class="form-check-input" type="radio" name="donation-frequency"
+                                            id="DonationFrequencyMonthly" value="monthly">
 
                                         <label class="form-check-label" for="DonationFrequencyMonthly">
                                             Monthly
@@ -168,8 +169,8 @@
 
                                 <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault1">
+                                        <input class="form-check-input" type="radio" name="donation-amount"
+                                            id="flexRadioDefault1" value="10">
                                         <label class="form-check-label" for="flexRadioDefault1">
                                             $10
                                         </label>
@@ -178,8 +179,8 @@
 
                                 <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault2">
+                                        <input class="form-check-input" type="radio" name="donation-amount"
+                                            id="flexRadioDefault2" value="15">
                                         <label class="form-check-label" for="flexRadioDefault2">
                                             $15
                                         </label>
@@ -188,8 +189,8 @@
 
                                 <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault3">
+                                        <input class="form-check-input" type="radio" name="donation-amount"
+                                            id="flexRadioDefault3" value="20">
                                         <label class="form-check-label" for="flexRadioDefault3">
                                             $20
                                         </label>
@@ -198,8 +199,8 @@
 
                                 <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault4">
+                                        <input class="form-check-input" type="radio" name="donation-amount"
+                                            id="flexRadioDefault4" value="30">
                                         <label class="form-check-label" for="flexRadioDefault4">
                                             $30
                                         </label>
@@ -208,8 +209,8 @@
 
                                 <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault5">
+                                        <input class="form-check-input" type="radio" name="donation-amount"
+                                            id="flexRadioDefault5" value="45">
                                         <label class="form-check-label" for="flexRadioDefault5">
                                             $45
                                         </label>
@@ -218,8 +219,8 @@
 
                                 <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault6">
+                                        <input class="form-check-input" type="radio" name="donation-amount"
+                                            id="flexRadioDefault6" value="50">
                                         <label class="form-check-label" for="flexRadioDefault6">
                                             $50
                                         </label>
@@ -230,8 +231,9 @@
                                     <div class="input-group">
                                         <span class="input-group-text" id="basic-addon1">$</span>
 
-                                        <input type="text" class="form-control" placeholder="Custom amount"
-                                            aria-label="Username" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" id="custom-amount" name="custom-amount"
+                                            inputmode="decimal" placeholder="Custom amount" aria-label="Custom amount"
+                                            aria-describedby="basic-addon1">
                                     </div>
                                 </div>
 
@@ -387,6 +389,7 @@
     <script src="../js/jquery.sticky.js"></script>
     <script src="../js/counter.js"></script>
     <script src="../js/custom.js"></script>
+    <script src="../js/donate.js"></script>
 
 </body>
 

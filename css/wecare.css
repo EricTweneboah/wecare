@@ -686,6 +686,14 @@ strong {
   padding: 60px 40px;
 }
 
+.gallery-image {
+  border-radius: var(--border-radius-medium);
+  display: block;
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
 
 /*---------------------------------------
   COUNTER NUMBERS              

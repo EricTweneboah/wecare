@@ -4,6 +4,7 @@
         console.warn("Donate form not found. Stripe handler not attached.");
         return;
     }
+    console.log("Donate handler attached.");
 
     const amountRadios = Array.from(form.querySelectorAll('input[name="donation-amount"]'));
     const frequencyRadios = Array.from(form.querySelectorAll('input[name="donation-frequency"]'));

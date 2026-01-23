@@ -129,7 +129,8 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-12 mx-auto">
-                        <form class="custom-form donate-form" id="donate-form" action="#" method="get" role="form">
+                        <form class="custom-form donate-form" id="donate-form" action="#" method="get" role="form"
+                            onsubmit="return window.handleDonateSubmit ? window.handleDonateSubmit(event) : true;">
                             <h3 class="mb-4">Support our work in Ghana</h3>
 
                             <p class="mb-4">Your gift fuels education, health outreach, and emergency relief for

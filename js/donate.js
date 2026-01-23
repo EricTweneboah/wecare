@@ -58,7 +58,7 @@
         });
     });
 
-    form.addEventListener("submit", async (event) => {
+    const submitHandler = async (event) => {
         event.preventDefault();
 
         const amount = getSelectedAmount();
@@ -103,5 +103,9 @@
                 submitButton.textContent = originalLabel;
             }
         }
-    });
+        return false;
+    };
+
+    window.handleDonateSubmit = submitHandler;
+    form.addEventListener("submit", submitHandler);
 })();
